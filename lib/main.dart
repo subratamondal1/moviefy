@@ -6,7 +6,7 @@ import 'package:moviefy/pages/splash_page.dart';
 void main() {
   runApp(SplashPage(onInitializationComplete: () {
     return runApp(
-      ProviderScope(
+      const ProviderScope(
         child: MyApp(),
       ),
     );
