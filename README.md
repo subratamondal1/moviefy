@@ -1,16 +1,16 @@
 # moviefy
 
-A new Flutter project.
+This is a single page flutter app for displaying popular and upcoming movies with a Rest API. 
+`https://www.themoviedb.org`
+The state of the app is managed by Flutter Riverpod package is a upgraded version of Provider.
+___
+### Features :
+- Rest API
+- Pagination
+- Riverpod State Management
+- Search based result
+- Category based result
+- Fetching data dynamically
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
