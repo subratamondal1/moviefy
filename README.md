@@ -11,6 +11,14 @@ ___
 - Search based result
 - Category based result
 - Fetching data dynamically
-
-
+ 
+<img align="left"  src="screenshot_of_ui/1_splash_screen.jpg" width="400" height="800" margin-right=10px> 
+<img align="left" src="screenshot_of_ui/2_fetching_data.jpg" width="400" height="800">
+<img align="left" src="screenshot_of_ui/3_fetched_data.jpg" width="400" height="800">
+<img align="left" src="screenshot_of_ui/4_on_selecting_tile_the_background_also_changes.jpg" width="400" height="800">
+<img align="left" src="screenshot_of_ui/6_upcoming.jpg" width="400" height="800">
+<img align="left" src="screenshot_of_ui/7_searched.jpg" width="400" height="800">
+<img align="left" src="screenshot_of_ui/8.jpg" width="400" height="800">
+<img align="left" src="screenshot_of_ui/upcoming.jpg" width="400" height="800">
+ 
 

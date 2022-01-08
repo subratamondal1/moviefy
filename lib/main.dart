@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:moviefy/pages/main_page.dart';
-import 'package:moviefy/pages/splash_page.dart';
+import 'package:moviefy/views/pages/main_page.dart';
+import 'package:moviefy/views/pages/splash_page.dart';
 
 void main() {
   runApp(SplashPage(onInitializationComplete: () {
