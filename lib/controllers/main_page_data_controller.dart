@@ -50,21 +50,21 @@ class MainPageDataController extends StateNotifier<MainPageData> {
           movies: [],
           pagination: 1,
           searchCategory: _category,
-          searchText:
-              ''); //The  movies: [] is empty because we are doing a new search
+          searchText: ''
+              ""); //The  movies: [] is empty because we are doing a new search
       getMovies();
     } catch (e) {
       print(e);
     }
   }
 
-  void updateTextSearch(String _searchText) {
+  void updateTextSearch(String? searchText) {
     try {
       state = state.copyWith(
         movies: [],
         pagination: 1,
         searchCategory: SearchCategory.none,
-        searchText: _searchText,
+        searchText: searchText,
       ); //The  movies: [] is empty because we are doing a new search
       getMovies();
     } catch (e) {

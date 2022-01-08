@@ -29,7 +29,8 @@ class MainPage extends ConsumerWidget {
   late double _device_height;
   late double _device_width;
   late double _statusbar_height;
-  late TextEditingController _searchTextFiedController;
+
+  late TextEditingController _searchTextFieldController;
 
   var _selectedMoviePosterURL;
 
@@ -46,8 +47,8 @@ class MainPage extends ConsumerWidget {
     _device_width = MediaQuery.of(context).size.width;
     _statusbar_height = MediaQuery.of(context).padding.top;
 
-    _searchTextFiedController = TextEditingController();
-    _searchTextFiedController.text = _mainPageData.searchText;
+    _searchTextFieldController = TextEditingController();
+    _searchTextFieldController.text = _mainPageData.searchText.toString();
 
     return _buildUi();
   }
@@ -173,9 +174,8 @@ class MainPage extends ConsumerWidget {
       height: _device_height * 0.05,
       width: _device_width * 0.5,
       child: TextField(
-        controller: _searchTextFiedController,
-        onSubmitted: (_input) =>
-            _mainPageDataController.updateTextSearch(_input),
+        controller: _searchTextFieldController,
+        onSubmitted: (input) => _mainPageDataController.updateTextSearch(input),
         style: const TextStyle(color: Colors.white),
         decoration: const InputDecoration(
             focusedBorder: InputBorder.none,
@@ -202,22 +202,22 @@ class MainPage extends ConsumerWidget {
           Icons.menu,
           color: Colors.white70,
         ),
-        items: [
+        items: const [
           DropdownMenuItem(
-            child: const Text(
+            child: Text(
               SearchCategory.popular,
               style: TextStyle(color: Colors.white),
             ),
             value: SearchCategory.popular,
           ),
-          const DropdownMenuItem(
+          DropdownMenuItem(
             child: Text(
               SearchCategory.upcoming,
               style: TextStyle(color: Colors.white),
             ),
             value: SearchCategory.upcoming,
           ),
-          const DropdownMenuItem(
+          DropdownMenuItem(
             child: Text(
               SearchCategory.none,
               style: TextStyle(color: Colors.white),

@@ -66,7 +66,7 @@ class MovieTile extends StatelessWidget {
                 child: Text(
                   movie.name,
                   overflow: TextOverflow.ellipsis,
-                  style: TextStyle(
+                  style: const TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.w400,
                       fontSize: 22.0),
@@ -74,7 +74,7 @@ class MovieTile extends StatelessWidget {
               ),
               Text(
                 movie.rating.toString(),
-                style: TextStyle(color: Colors.white, fontSize: 22.0),
+                style: const TextStyle(color: Colors.white, fontSize: 22.0),
               )
             ],
           ),
@@ -82,7 +82,7 @@ class MovieTile extends StatelessWidget {
             padding: EdgeInsets.only(top: height * 0.02),
             child: Text(
               '${movie.language.toUpperCase()} | R-Rated: ${movie.isAdult.toString().toUpperCase()} | ${movie.releaseDate}',
-              style: TextStyle(color: Colors.white, fontSize: 12.0),
+              style: const TextStyle(color: Colors.white, fontSize: 12.0),
             ),
           ),
           Container(

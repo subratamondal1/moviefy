@@ -50,11 +50,11 @@ class MovieService {
     }
   }
 
-  Future<List<Movie>> searchMovies(String _searchTerm, {int? page}) async {
-    Response _response = await _http?.get(
-      '/search/movie',
-      query: {'query': _searchTerm, 'page': page},
-    );
+  Future<List<Movie>> searchMovies(String? searchTerm, {int? page}) async {
+    Response _response = await _http?.get('/search/movie', query: {
+      'query': searchTerm ?? '',
+      'page': page,
+    });
 
     if (_response.statusCode == 200) {
       // _response.data this is the data we receive from the api and storing it inside _data
