@@ -79,7 +79,7 @@ class _SplashPageState extends State<SplashPage> {
               ],
             ),
           ),
-          child: Center(
+          child: const Center(
             child: Text(
               'moviefy',
               style: TextStyle(

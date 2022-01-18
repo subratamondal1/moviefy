@@ -91,7 +91,7 @@ class MovieTile extends StatelessWidget {
               movie.description,
               maxLines: 9,
               overflow: TextOverflow.ellipsis,
-              style: TextStyle(color: Colors.white70, fontSize: 10),
+              style: const TextStyle(color: Colors.white70, fontSize: 10),
             ),
           )
         ],
